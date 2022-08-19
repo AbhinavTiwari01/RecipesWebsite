@@ -14,7 +14,10 @@ app.use(cors())
 
 app.use('/', Routes);
 
-Connection();
+const username= 'user';
+const password= 'mycrudapplication';
+
+Connection(username, password);
 
 app.listen(8080, ()=> {
     console.log("Server is started now");
